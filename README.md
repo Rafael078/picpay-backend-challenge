@@ -1,48 +1,78 @@
-# 💸 PicPay Backend Challenge
+# 💸 Desafio Backend PicPay | PicPay Backend Challenge
 
-Este é um projeto desenvolvido como solução para o **desafio backend da PicPay**. O objetivo principal é simular uma API de transferência de dinheiro entre usuários, com regras de negócio como autorização externa e notificação. O projeto foi desenvolvido utilizando **Java 17** e **Spring Boot**.
+Este é um projeto desenvolvido como solução para o desafio backend da PicPay.  
+O objetivo é simular uma API de transferências entre usuários, com regras de negócio como autorização externa e notificação por serviço.  
+O projeto utiliza **Java 17** e **Spring Boot**.
 
-This project was developed as a solution for the **PicPay backend challenge**. The main goal is to simulate a money transfer API between users, including business rules such as external authorization and user notification. The project was built using **Java 17** and **Spring Boot**.
+This project was developed as a solution for PicPay's backend challenge.  
+It simulates a money transfer API between users, including business rules like external authorization and user notification.  
+The project uses **Java 17** and **Spring Boot**.
 
 ---
 
 ## 🚀 Tecnologias | Technologies
 
+**PT-BR**  
 - Java 17  
 - Spring Boot  
 - Spring Data JPA  
-- H2 Database (banco de dados em memória)  
+- H2 Database (em memória)  
+- Maven  
+- API REST  
+- JUnit
+
+**EN**  
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- H2 Database (in-memory)  
 - Maven  
 - REST API  
-- JUnit (para testes unitários)
+- JUnit
 
 ---
 
 ## 📌 Funcionalidades | Features
 
+**PT-BR**  
 - Cadastro de usuários (comum e lojista)  
 - Consulta de saldo  
-- Transferência entre usuários  
-- Autorização da transação via serviço externo  
-- Notificação ao usuário recebedor após a transação  
-- Validações: saldo suficiente, tipo de usuário, etc.  
+- Transferência de valores entre usuários  
+- Validação de saldo e tipo de usuário  
+- Autorização de transação via serviço externo  
+- Notificação ao recebedor  
 - Testes unitários básicos
+
+**EN**  
+- User registration (common and merchant)  
+- Balance inquiry  
+- Money transfer between users  
+- Validation for balance and user type  
+- Transaction authorization via external service  
+- Notification to the receiver  
+- Basic unit tests
 
 ---
 
 ## 🧪 Como executar o projeto | How to run the project
 
 ### Pré-requisitos | Prerequisites
-
 - Java 17  
 - Maven
 
-### Passos | Steps
+### PT-BR
 
 ```bash
-# Clone o repositório / Clone the repository
+# Clone o repositório
 git clone https://github.com/Rafael078/picpay-backend-challenge.git
 cd picpay-backend-challenge
 
-# Compile e execute a aplicação / Build and run the application
+# Compile e execute
+mvn spring-boot:run
+
+# Clone the repository
+git clone https://github.com/Rafael078/picpay-backend-challenge.git
+cd picpay-backend-challenge
+
+# Build and run
 mvn spring-boot:run
